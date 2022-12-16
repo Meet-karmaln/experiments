@@ -62,3 +62,25 @@ h3 {
   width: 400px;
   background-color: aqua;
 }
+
+.figure {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  animation: change 1s infinite;
+  animation-play-state: paused;
+}
+
+@keyframes change {
+  from {
+    background-color: red;
+  }
+
+  to {
+    background-color: pink;
+  }
+}
+
+.figure:hover {
+  animation-play-state: running;
+}
