@@ -9,11 +9,13 @@
 // import Child from "./Child";
 // import CurvedLine from "./CurvedLine/CurvedLine";
 // import Scroll from "./onScroll Animation/Scroll";
-import AnimateOnHover from "./animateOnHover/AnimateOnHover";
-import Material from "./Material/Material";
+// import AnimateOnHover from "./animateOnHover/AnimateOnHover";
+// import Material from "./Material/Material";
+import Boxes from "./logical/Boxes";
+// import OnPressAnimation from "./onPressAnimation/OnPressAnimation";
 
 function App() {
-	return <AnimateOnHover />;
+	return <Boxes />;
 }
 export default App;
 

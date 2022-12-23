@@ -4,8 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(255, 228, 196);
-  /* display: grid;
-  place-items: center; */
+  display: grid;
+  place-items: center;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -83,4 +83,34 @@ h3 {
 
 .figure:hover {
   animation-play-state: running;
+}
+
+.pressIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(17, 97, 17);
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: max-content max-content max-content;
+  gap: 8px;
 }
