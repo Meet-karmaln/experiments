@@ -3,7 +3,8 @@ body {
   font-family: 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 228, 196);
+  /* background-color: rgb(255, 228, 196); */
+  background-color: #fff;
   display: grid;
   place-items: center;
   height: 100vh;

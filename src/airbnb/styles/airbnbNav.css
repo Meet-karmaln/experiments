@@ -1,0 +1,166 @@
+.wraper {
+   height: 100vh;
+   width: 100vw;
+   background-color: #0000006e;
+   display: grid;
+   place-items: center;
+}
+
+.search-widget-container {
+   width: max-content;
+   background: white;
+   display: flex;
+   border-radius: 50px;
+   overflow: hidden;
+   border: 1px solid #DDDDDD;
+   box-shadow: 0 0 20px 1px #dddddd7a;
+   transition: transform 0.3s, opacity 0.5s;
+}
+
+.search-widget-container-animation {
+   transform: scale(2) translateY(20px);
+   opacity: 0;
+}
+
+.btn {
+   background: none;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   padding: 0.25rem 0;
+}
+
+.btn-text {
+   padding: 0.5rem 1.5rem;
+   border-right: 1px solid #DDDDDD;
+}
+
+.search-widget-container .btn:nth-child(3) span {
+   padding-right: 0.5rem;
+   border: none;
+   color: #AAAAAA;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.searchIcon {
+   background-color: rgb(248, 55, 92);
+   padding: 0.5rem;
+   border-radius: 50%;
+}
+
+/* inner upper*/
+
+.main-innerContainer {
+   padding: 1.5rem 1rem;
+   min-width: 600px;
+   width: 80vw;
+   max-width: 1000px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   background-color: white;
+   border-radius: 20px;
+}
+
+.upper-nav {
+   width: clamp(500px, 200px, 45%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn-inner {
+   padding: 0.5rem 1.5rem;
+   font-size: 17px;
+   cursor: pointer;
+   color: #474747;
+}
+
+.btn-inner span {
+   position: relative;
+}
+
+.btn-inner span::after {
+   content: '';
+   position: absolute;
+   inset: 25px 0 -8px 0;
+   width: 100%;
+   background: #474747;
+   transition: transform 0.3s;
+   transform: scaleX(0);
+}
+
+.btn-inner span:hover::after {
+   transform: scaleX(1);
+}
+
+.btn-inner span:hover {
+   color: #AAAAAA;
+}
+
+.btn-inner span:hover::after {
+   background-color: #AAAAAA;
+}
+
+
+/*inner lower*/
+
+.form {
+   display: flex;
+   border: 1px solid #DDD;
+   border-radius: 50px;
+   min-height: 4.5rem;
+   overflow: hidden;
+}
+
+.label {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 100%;
+   font-size: 12px;
+   cursor: pointer;
+   border-radius: 50px;
+}
+
+.label:hover,
+.label:hover input {
+   background-color: #DDDDDD;
+}
+
+.label input {
+   outline: none;
+   border: none;
+   padding: .5rem 0 0 0;
+   font-size: 12px;
+}
+
+.label div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 2rem;
+   border-right: 1px solid #DDD;
+}
+
+.label:hover div {
+   border: none;
+}
+
+.label:hover .label:nth-child(4) div {
+   border-right: none;
+}
+
+.destination {
+   width: 14rem;
+}
+
+::placeholder {
+   color: #717171;
+   font-size: 15px;
+}

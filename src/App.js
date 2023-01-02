@@ -11,11 +11,12 @@
 // import Scroll from "./onScroll Animation/Scroll";
 // import AnimateOnHover from "./animateOnHover/AnimateOnHover";
 // import Material from "./Material/Material";
-import Boxes from "./logical/Boxes";
+// import Boxes from "./logical/Boxes";
 // import OnPressAnimation from "./onPressAnimation/OnPressAnimation";
+import AirbnbNav from "./airbnb/AirbnbNav";
 
 function App() {
-	return <Boxes />;
+	return <AirbnbNav />;
 }
 export default App;
 
